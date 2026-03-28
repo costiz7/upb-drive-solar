@@ -1,0 +1,100 @@
+@import './variables.css';
+
+:root {
+  --navbar-height: 80px; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 200vh;
+  overflow-x: hidden;
+  font-family: var(--font-text);
+  background-color: var(--midnight-steel);
+  color: var(--cloud-gray);
+}
+
+
+/*NAVBAR STYLING*/
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  transition: all 300ms ease-in-out;
+  gap: 100px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.05);
+}
+
+.nav-brand {
+  width: 200px;
+  margin-left: 15px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+
+  color: var(--cloud-gray);
+  transition: all 300ms ease-in-out;
+}
+
+.nav-links {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.nav-links > li {
+  height: 30px;
+  list-style: none;
+  position: relative;
+}
+
+.nav-links > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  height: 100%;
+  text-decoration: none;
+  color: var(--cloud-gray);
+  font-weight: bold;
+  transition: all 300ms ease-in-out;
+  letter-spacing: 1px;
+}
+
+.navbar.scrolled {
+  background-color: var(--eco-neon);
+}
+
+.navbar.scrolled .logo,
+.navbar.scrolled .nav-links > li > a {
+  color: var(--midnight-steel);
+}
+
+.nav-links > li::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 5px;
+  background-color: var(--eco-neon);
+  transition: width 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+.nav-links > li:hover::after {
+  width: 100%;
+}
+
+.navbar.scrolled .nav-links > li::after {
+  background-color: var(--midnight-steel);
+}
