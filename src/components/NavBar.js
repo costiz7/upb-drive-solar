@@ -1,5 +1,7 @@
 export function renderNavbar() {
   const navbarHTML = `
+    <div class="menu-overlay"></div>
+
     <nav class="navbar">
       <div class="nav-brand">
         <a href="/">
@@ -74,6 +76,12 @@ export function renderNavbar() {
         <li><a href="/partners.html">Partners</a></li>
         <li><a href="/contact.html">Contact</a></li>
       </ul>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </nav>
   `;
 
@@ -81,5 +89,20 @@ export function renderNavbar() {
   
   if (placeholder) {
     placeholder.innerHTML = navbarHTML;
+
+    //MOBILE MENU LOGIC
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const overlay = document.querySelector('.menu-overlay');
+
+    //Open/Close function for the menu
+    const toggleMenu = () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      overlay.classList.toggle('active');
+    }
+
+    hamburger.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
   }
 }
