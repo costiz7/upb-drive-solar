@@ -27,17 +27,19 @@ body {
   display: flex;
   align-items: center;
   transition: all 300ms ease-in-out;
-  gap: 100px;
+  gap: 20%;
+  z-index: 100;
   border-bottom: solid 1px rgba(255, 255, 255, 0.05);
 }
 
 .nav-brand {
+  height: auto;
   width: 200px;
   margin-left: 15px;
 }
 
 .logo {
-  width: 100%;
+  width: 200px;
   height: auto;
 
   color: var(--cloud-gray);
@@ -48,7 +50,6 @@ body {
   flex: 1;
   display: flex;
   justify-content: space-evenly;
-  gap: 10px;
 }
 
 .nav-links > li {
@@ -65,9 +66,9 @@ body {
   height: 100%;
   text-decoration: none;
   color: var(--cloud-gray);
-  font-weight: bold;
+  font-weight: 100;
   transition: all 300ms ease-in-out;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .navbar.scrolled {
@@ -98,3 +99,60 @@ body {
 .navbar.scrolled .nav-links > li::after {
   background-color: var(--midnight-steel);
 }
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hero-image::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(4, 13, 22, 0.6); 
+  z-index: 1; 
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  z-index: 2;
+  width: 90%;
+}
+
+.hero-content h1 {
+  font-family: var(--font-display);
+  font-size: 4.5rem;
+  font-weight: 100;
+  letter-spacing: 5px;
+  color: var(--cloud-gray);
+  line-height: 1.4;
+}
+
+.hero-content h1 > span:nth-child(1) {
+  color: var(--vibrant-rose);
+  font-weight: bold;
+}
+
+.hero-content h1 > span:nth-child(3) {
+  color: var(--eco-neon);
+  font-weight: bold;
+}
+
