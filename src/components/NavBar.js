@@ -71,10 +71,10 @@ export function renderNavbar() {
       
       <ul class="nav-links">
         <li><a href="/">Home</a></li>
-        <li><a href="/about.html">About Us</a></li>
-        <li><a href="/team.html">Meet The Team</a></li>
-        <li><a href="/partners.html">Partners</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/team">Meet The Team</a></li>
+        <li><a href="/partners">Partners</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
 
       <div class="hamburger">
