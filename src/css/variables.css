@@ -1,11 +1,22 @@
 :root {
   --eco-neon: #C3FF2B;
-  --deep-forest: #0B3310;
-  --vibrant-rose: #F06A93;
-  --cloud-gray: #E5E5E5;
-  --carbon-black: #1C1C1C;
-  --midnight-steel: #040D16;
+  --rgb-eco-neon: 195, 255, 43;
 
-  --font-display: 'Parabole Display Bold', sans-serif;
-  --font-text: 'Parabole Text Regular', sans-serif;
+  --deep-forest: #0B3310;
+  --rgb-deep-forest: 11, 51, 16;
+
+  --vibrant-rose: #F06A93;
+  --rgb-vibrant-rose: 240, 106, 147;
+
+  --cloud-gray: #E5E5E5;
+  --rgb-cloud-gray: 229, 229, 229;
+
+  --carbon-black: #1C1C1C;
+  --rgb-carbon-black: 28, 28, 28;
+
+  --midnight-steel: #040D16;
+  --rgb-midnight-steel: 4, 13, 22;
+
+  --font-display: 'Parabole Display', sans-serif;
+  --font-text: 'Parabole Text', sans-serif;
 }

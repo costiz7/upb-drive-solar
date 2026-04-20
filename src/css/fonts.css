@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Parabole Display';
+  src: url('/fonts/Parabole-VariableDisplay.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parabole Text';
+  src: url('/fonts/Parabole-VariableText.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
