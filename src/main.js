@@ -1,6 +1,8 @@
 import { renderNavbar } from './components/NavBar.js';
+import { renderFooter } from './components/Footer.js';
 
 renderNavbar();
+renderFooter();
 
 window.addEventListener('scroll', () => {
   const navbar = document.querySelector('.navbar');

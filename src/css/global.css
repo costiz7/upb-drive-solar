@@ -12,7 +12,7 @@
 }
 
 body {
-  min-height: 200vh;
+  min-height: 100vh;
   overflow-x: hidden;
   font-family: var(--font-text);
   background-color: var(--midnight-steel);
@@ -217,4 +217,61 @@ body {
     color: var(--cloud-gray);
     transition: all 300ms ease-in-out;
   }
+}
+
+
+/* FOOTER STYLING */
+#footer-placeholder {
+  position: relative;
+  min-height: 350px;
+  width: 100%;
+  background-color: var(--midnight-steel);
+  display: flex;
+  flex-direction: column;
+  border-top: solid 1px rgba(255, 255, 255, 0.2);
+  margin-top: 20px;
+}
+
+.footer-upper-section {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-lower-section {
+  position: relative;
+  width: 100%;
+  min-height: 60px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-top: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+.footer-upper-section > .pages-section {
+  flex: 1;
+  border-right: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+.footer-upper-section > .contact-section {
+  flex: 1;
+  border-right: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+.footer-upper-section > .social-media-section {
+  flex: 1;
+}
+
+.footer-lower-section > .credit {
+  position: relative;
+}
+
+.footer-lower-section > .copyright {
+  position: relative;
 }
