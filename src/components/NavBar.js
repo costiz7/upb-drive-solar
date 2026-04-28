@@ -104,5 +104,23 @@ export function renderNavbar() {
 
     hamburger.addEventListener('click', toggleMenu);
     overlay.addEventListener('click', toggleMenu);
+
+    const menuLinks = document.querySelectorAll('.nav-links a');
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        if(navLinks.classList.contains('active')) {
+          e.preventDefault();
+
+          const targetUrl = link.getAttribute('href');
+
+          toggleMenu();
+
+          setTimeout(() => {
+            window.location.href = targetUrl;
+          }, 400);
+        }
+      });
+    });
   }
 }
