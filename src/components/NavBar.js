@@ -113,12 +113,12 @@ export function renderNavbar() {
           e.preventDefault();
 
           const targetUrl = link.getAttribute('href');
-
-          toggleMenu();
-
           setTimeout(() => {
+            toggleMenu();
+
             window.location.href = targetUrl;
-          }, 400);
+          }, 300)
+          
         }
       });
     });
