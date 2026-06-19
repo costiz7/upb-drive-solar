@@ -1,0 +1,7 @@
+.logo {
+  width: 200px;
+  height: auto;
+
+  color: var(--cloud-gray);
+  transition: all 300ms ease-in-out;
+}

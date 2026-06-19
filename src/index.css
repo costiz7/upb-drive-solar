@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Parabole Display';
+  src: url('/fonts/Parabole-VariableDisplay.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parabole Text';
+  src: url('/fonts/Parabole-VariableText.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --eco-neon: #C3FF2B;
+  --rgb-eco-neon: 195, 255, 43;
+
+  --deep-forest: #0B3310;
+  --rgb-deep-forest: 11, 51, 16;
+
+  --vibrant-rose: #F06A93;
+  --rgb-vibrant-rose: 240, 106, 147;
+
+  --cloud-gray: #E5E5E5;
+  --rgb-cloud-gray: 229, 229, 229;
+
+  --carbon-black: #1C1C1C;
+  --rgb-carbon-black: 28, 28, 28;
+
+  --midnight-steel: #040D16;
+  --rgb-midnight-steel: 4, 13, 22;
+
+  --font-display: 'Parabole Display', sans-serif;
+  --font-text: 'Parabole Text', sans-serif;
+
+  --navbar-height: 80px;
+  --min-navbar-height: 60px; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: var(--font-text);
+  background-color: var(--midnight-steel);
+  color: var(--cloud-gray);
+}
