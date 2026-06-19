@@ -1,0 +1,247 @@
+.first-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#hero-image {
+  position: absolute;
+  top: 0;            
+  left: 0;          
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.first-section::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(4, 13, 22, 0.65); 
+  z-index: 1; 
+}
+
+.hero-content {
+  position: relative;
+  height: 100%;
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+
+  -webkit-tap-highlight-color: transparent; 
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hero-text-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 225px;
+  gap: 30px;
+  text-align: center;
+}
+
+.hero-title {
+  position: relative;
+  font-family: var(--font-text);
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: var(--eco-neon);
+}
+
+.hero-title > span {
+  font-family: var(--font-display);
+  color: var(--eco-neon);
+  font-size: 3.5rem;
+  filter: drop-shadow(0px 0px 5px rgba(var(--rgb-eco-neon), 1)) drop-shadow(0px 0px 2px rgba(var(--rgb-eco-neon), 0.5));
+  padding-left: 10px;
+}
+
+.hero-motto {
+  display: flex;
+  gap: 40px;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-family: var(--font-display);
+}
+
+.glow-btn {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  padding: 15px 50px;
+
+  font-size: 1.2rem;
+  font-family: var(--font-display);
+  letter-spacing: 2px;
+  font-weight: bolder;
+
+  color: var(--eco-neon);
+  background-color: var(--midnight-steel);
+  border: 3px solid var(--eco-neon);
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+.glow-btn:hover {
+  color: var(--midnight-steel);
+  background-color: var(--eco-neon);
+  box-shadow: 0px 0px 20px rgba(var(--rgb-eco-neon), 1);
+}
+
+.hero-motto > span:first-child {
+  color: var(--eco-neon);
+  filter: drop-shadow(0px 0px 5px rgba(var(--rgb-eco-neon), 1))
+}
+
+.hero-motto >span:last-child {
+  color: var(--vibrant-rose);
+  filter: drop-shadow(0px 0px 5px rgba(var(--rgb-vibrant-rose), 1))
+}
+
+.second-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.intro-content {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+  border-top: solid 1px rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.intro-left-image {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+#img1-jpg {
+  position: absolute;
+  top: 0;            
+  left: 0;          
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.intro-right-content {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  padding: 30px;
+  z-index: 1;
+}
+
+.intro-right-content > .text-content > span {
+  font-family: var(--font-display);
+  font-size: 2.1rem;
+  color: var(--eco-neon);
+  letter-spacing: 0px;
+}
+
+.intro-right-content > .text-content {
+  font-size: 1.7rem;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  color: var(--cloud-gray);
+  word-spacing: 5px;
+}
+
+.glow-btn.home-second-btn {
+  color: var(--vibrant-rose);
+  background-color: var(--midnight-steel);
+  border: 3px solid var(--vibrant-rose);
+}
+
+.glow-btn.home-second-btn:hover {
+  color: var(--midnight-steel);
+  background-color: var(--vibrant-rose);
+  box-shadow: 0px 0px 20px rgba(var(--rgb-vibrant-rose), 1);
+}
+
+
+@media (max-width: 900px) {
+  .hero-text-section {
+    margin-top: 125px;
+    gap: 50px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-title > span {
+    font-size: 3.5rem;
+    padding-left: 30px;
+  }
+
+  .hero-motto {
+    font-size: 1.8rem;
+  }
+
+  .glow-btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-content {
+    padding: 15px;
+  }
+
+  .hero-text-section {
+    margin-top: 125px;
+    gap: 50px;
+    text-align: left;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-title > span {
+    font-size: 2.3rem;
+    padding-left: 0px;
+  }
+
+  .hero-motto {
+    font-size: 1.8rem;
+    gap: 10px;
+  }
+
+  .glow-btn {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }  
+}
+

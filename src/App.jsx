@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import MainLayout from "./MainLayout/MainLayout.jsx";
+import HomePage from "./HomePage/HomePage.jsx";
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={ <MainLayout /> }>
-            <Route path="/" element={<></>}/>
+            <Route path="/" element={<HomePage />}/>
             <Route path="/about" element={<></>}/>
             <Route path="/team" element={<></>}/>
             <Route path="/partners" element={<></>}/>
