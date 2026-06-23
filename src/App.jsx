@@ -3,6 +3,7 @@ import "./App.css";
 import MainLayout from "./MainLayout/MainLayout.jsx";
 import HomePage from "./HomePage/HomePage.jsx";
 import AboutUsPage from "./AboutUsPage/AboutUsPage.jsx";
+import MeetTheTeamPage from "./MeetTheTeamPage/MeetTheTeamPage.jsx";
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
           <Route element={ <MainLayout /> }>
             <Route path="/" element={<HomePage />}/>
             <Route path="/about" element={<AboutUsPage />}/>
-            <Route path="/team" element={<></>}/>
+            <Route path="/team" element={<MeetTheTeamPage />}/>
             <Route path="/partners" element={<></>}/>
             <Route path="/contact" element={<></>}/>
           </Route>
