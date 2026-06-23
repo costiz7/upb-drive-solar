@@ -81,32 +81,6 @@
   font-family: var(--font-display);
 }
 
-.glow-btn {
-  position: relative;
-  width: fit-content;
-  height: fit-content;
-  padding: 15px 50px;
-
-  font-size: 1.2rem;
-  font-family: var(--font-display);
-  letter-spacing: 2px;
-  font-weight: bolder;
-
-  color: var(--eco-neon);
-  background-color: var(--midnight-steel);
-  border: 3px solid var(--eco-neon);
-  border-radius: 10px;
-
-  cursor: pointer;
-  transition: 300ms ease-in-out;
-}
-
-.glow-btn:hover {
-  color: var(--midnight-steel);
-  background-color: var(--eco-neon);
-  box-shadow: 0px 0px 20px rgba(var(--rgb-eco-neon), 1);
-}
-
 .hero-motto > span:first-child {
   color: var(--eco-neon);
   filter: drop-shadow(0px 0px 5px rgba(var(--rgb-eco-neon), 1))
@@ -160,6 +134,10 @@
   overflow: hidden;
   padding: 30px;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .intro-right-content > .text-content > span {
@@ -209,8 +187,18 @@
     font-size: 1.8rem;
   }
 
-  .glow-btn {
-    font-size: 1rem;
+  #img1-jpg {
+    filter: brightness(0.4);
+  }
+
+  .intro-right-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
   }
 }
 
@@ -238,10 +226,13 @@
     font-size: 1.8rem;
     gap: 10px;
   }
+  
+  .intro-right-content > .text-content > span {
+    font-size: 1.9rem;
+  }
 
-  .glow-btn {
-    font-size: 1rem;
-    margin-bottom: 30px;
-  }  
+  .intro-right-content > .text-content {
+    font-size: 1.5rem;
+  }
 }
 
