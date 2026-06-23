@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import MainLayout from "./MainLayout/MainLayout.jsx";
 import HomePage from "./HomePage/HomePage.jsx";
+import AboutUsPage from "./AboutUsPage/AboutUsPage.jsx";
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
         <Routes>
           <Route element={ <MainLayout /> }>
             <Route path="/" element={<HomePage />}/>
-            <Route path="/about" element={<></>}/>
+            <Route path="/about" element={<AboutUsPage />}/>
             <Route path="/team" element={<></>}/>
             <Route path="/partners" element={<></>}/>
             <Route path="/contact" element={<></>}/>
