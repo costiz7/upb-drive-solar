@@ -1,7 +1,7 @@
 .department-wrapper {
   position: relative;
   width: 100%;
-  height: 500px;
+  min-height: 500px;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -9,6 +9,7 @@
   border-bottom: solid 1px rgba(255, 255, 255, 0.1);
   border-top: solid 1px rgba(255, 255, 255, 0.1);
   margin-top: 65px;
+  margin-bottom: 35px;
 }
 
 .department-wrapper.inverse {
@@ -57,7 +58,8 @@
 @media (max-width: 900px) {
   .department-wrapper {
     flex-direction: row;
-    height: 450px;
+    min-height: 450px;
+    margin-top: 35px;
   }
 
   .department-wrapper.inverse {
@@ -82,7 +84,8 @@
 @media (max-width: 500px) {
   .department-wrapper {
     flex-direction: column;
-    height: 600px;
+    min-height: 600px;
+    margin-top: 25px;
   }
 
   .department-wrapper.inverse {
