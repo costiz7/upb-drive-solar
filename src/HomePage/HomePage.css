@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-#hero-image {
+.first-section > img {
   position: absolute;
   top: 0;            
   left: 0;          
@@ -117,7 +117,7 @@
   overflow: hidden;
 }
 
-#img1-jpg {
+.intro-left-image > img {
   position: absolute;
   top: 0;            
   left: 0;          
@@ -187,7 +187,7 @@
     font-size: 1.8rem;
   }
 
-  #img1-jpg {
+  .intro-left-image > img {
     filter: brightness(0.4);
   }
 
