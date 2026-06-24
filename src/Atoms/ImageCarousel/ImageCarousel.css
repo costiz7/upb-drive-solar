@@ -1,0 +1,67 @@
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Poți ajusta înălțimea în funcție de design-ul tău */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 50%; /* Imaginea centrală ocupă 50% din lățimea caruselului */
+  max-width: 600px;
+  height: 80%; /* Ajustează aspectul */
+  object-fit: cover;
+  border-radius: 20px; /* Colțuri rotunjite elegante */
+  transition: all 0.5s ease-in-out; /* Animație smooth la schimbare */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  left: 50%;
+  top: 50%;
+}
+
+/* IMAGINEA CENTRALĂ */
+.carousel-item.active {
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 10; /* O punem deasupra tuturor */
+  opacity: 1;
+  cursor: default;
+}
+
+/* IMAGINEA DIN STÂNGA */
+.carousel-item.prev {
+  transform: translate(-110%, -50%) scale(0.8); /* O dăm mai în stânga și o micșorăm */
+  z-index: 5; /* O punem în spatele celei active */
+  opacity: 0.6; /* O facem puțin transparentă */
+  cursor: pointer; /* Arătăm că se poate da click pe ea */
+}
+
+/* IMAGINEA DIN DREAPTA */
+.carousel-item.next {
+  transform: translate(10%, -50%) scale(0.8); /* O dăm mai în dreapta și o micșorăm */
+  z-index: 5;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/* CELELALTE IMAGINI (ASCUNSE) */
+.carousel-item.hidden {
+  transform: translate(-50%, -50%) scale(0.5); /* Le ascundem micșorate sub imaginea centrală */
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none; /* Nu reacționează la click */
+}
+
+/* --- Ajustări pentru mobil (Ecrane mici) --- */
+@media (max-width: 768px) {
+  .carousel-item {
+    width: 70%; /* Pe mobil facem imaginile puțin mai late proporțional */
+  }
+  .carousel-item.prev {
+    transform: translate(-105%, -50%) scale(0.8);
+  }
+  .carousel-item.next {
+    transform: translate(5%, -50%) scale(0.8);
+  }
+}
