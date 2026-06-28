@@ -3,35 +3,28 @@ import './ImageCarousel.css';
 
 const ImageCarousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
-  // Stări pentru a detecta mișcarea degetului (swipe)
   const [touchStartX, setTouchStartX] = useState(0);
   const [touchEndX, setTouchEndX] = useState(0);
 
-  // Funcție pentru imaginea următoare
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  // Funcție pentru imaginea anterioară
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
-  // Efect pentru Auto-Play (la fiecare 3 secunde)
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
     }, 3000);
 
-    // Curățăm intervalul dacă utilizatorul interacționează sau dacă componenta dispare
     return () => clearInterval(interval);
-  }, [currentIndex]); // Punem currentIndex ca dependență pentru a reseta timer-ul când dai swipe manual
+  }, [currentIndex]);
 
-  // --- Funcții pentru Swipe pe Mobil ---
   const handleTouchStart = (e) => {
     setTouchStartX(e.targetTouches[0].clientX);
-    setTouchEndX(e.targetTouches[0].clientX); // Prevenim un swipe fals la o simplă atingere
+    setTouchEndX(e.targetTouches[0].clientX);
   };
 
   const handleTouchMove = (e) => {
@@ -39,20 +32,17 @@ const ImageCarousel = ({ images }) => {
   };
 
   const handleTouchEnd = () => {
-    const swipeThreshold = 50; // Distanța minimă în pixeli pentru a fi considerat swipe
+    const swipeThreshold = 50;
 
     if (touchStartX - touchEndX > swipeThreshold) {
-      // Swipe stânga -> următoarea imagine
       nextSlide();
     }
 
     if (touchStartX - touchEndX < -swipeThreshold) {
-      // Swipe dreapta -> imaginea anterioară
       prevSlide();
     }
   };
 
-  // Dacă nu avem imagini sau avem mai puțin de 3, nu randăm caruselul complex
   if (!images || images.length === 0) return null;
 
   return (
@@ -63,15 +53,14 @@ const ImageCarousel = ({ images }) => {
       onTouchEnd={handleTouchEnd}
     >
       {images.map((img, index) => {
-        // Determinăm clasa CSS în funcție de indexul imaginii relativ la imaginea curentă
         let position = 'hidden';
         
         if (index === currentIndex) {
-          position = 'active'; // Imaginea din centru
+          position = 'active';
         } else if (index === (currentIndex - 1 + images.length) % images.length) {
-          position = 'prev'; // Imaginea din stânga
+          position = 'prev';
         } else if (index === (currentIndex + 1) % images.length) {
-          position = 'next'; // Imaginea din dreapta
+          position = 'next';
         }
 
         return (
@@ -80,7 +69,6 @@ const ImageCarousel = ({ images }) => {
             src={img}
             alt={`Slide ${index}`}
             className={`carousel-item ${position}`}
-            // Bonus: Dacă utilizatorul dă click pe imaginile laterale pe PC, caruselul se mută pe ele
             onClick={() => {
               if (position === 'prev') prevSlide();
               if (position === 'next') nextSlide();
