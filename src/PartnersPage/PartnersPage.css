@@ -51,3 +51,56 @@
     flex-wrap: wrap;
 }
 
+@media (max-width: 900px) {
+    .partners-page-wrapper {
+        padding: 0 15px;
+        margin-top: 110px;
+        align-items: flex-start;
+    }
+
+    .partners-page-wrapper > h2 {
+        font-size: 1.8rem;
+        word-spacing: 5px;
+    }
+
+    .partners-page-wrapper > p {
+        font-size: 1.1rem;
+        word-spacing: 2px;
+        text-align: left;
+    }
+
+    .partners-section {
+        align-items: flex-start;
+    }
+
+    .partners-section > h1 {
+        font-size: 2.2rem;
+        word-spacing: 5px;
+        margin: 50px 0 20px 0;
+    }
+
+    .partners-section > .partners-logos {
+        justify-content: flex-start;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .partners-page-wrapper {
+        margin-top: 90px;
+    }
+
+    .partners-page-wrapper > h2 {
+        font-size: 1.6rem;
+    }
+
+    .partners-page-wrapper > p {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+
+    .partners-section > .partners-logos {
+        gap: 20px;
+    }
+}

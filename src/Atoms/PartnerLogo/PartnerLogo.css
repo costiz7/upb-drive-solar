@@ -15,3 +15,15 @@
     transform: scale(1.05);
     filter: drop-shadow(0 0 10px rgba(var(--rgb-eco-neon), 1))
 }
+
+@media (max-width: 900px) {
+    .partner-logo-image-wrapper {
+        width: 125px;
+    }
+}
+
+@media (max-width: 500px) {
+    .partner-logo-image-wrapper {
+        width: 100px;
+    }
+}
