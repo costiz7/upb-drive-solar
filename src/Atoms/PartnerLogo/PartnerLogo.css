@@ -1,0 +1,17 @@
+.partner-logo-image-wrapper {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 300ms ease;
+}
+
+.partner-logo-image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.partner-logo-image-wrapper:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px rgba(var(--rgb-eco-neon), 1))
+}

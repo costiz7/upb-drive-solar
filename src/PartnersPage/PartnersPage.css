@@ -1,0 +1,53 @@
+.partners-page-wrapper {
+    position: relative;
+    padding: 0 30px;
+    margin-top: 110px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners-page-wrapper > h2 {
+    font-size: 2rem;
+    font-family: var(--font-display);
+    color: var(--vibrant-rose);
+    word-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+.partners-page-wrapper > p {
+    position: relative;
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    color: var(--cloud-gray);
+    word-spacing: 5px;
+    text-align: center;
+}
+
+.partners-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners-section > h1 {
+    color: var(--eco-neon);
+    font-family: var(--font-display);
+    font-size: 2.8rem;
+    word-spacing: 10px;
+    margin: 70px 0 20px 0;
+}
+
+.partners-section > .partners-logos {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
