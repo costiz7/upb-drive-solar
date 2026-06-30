@@ -7,7 +7,7 @@ const MeetTheTeamPage = () => {
             <div className="mtt-wrapper">
                 <h1 className="mtt-header">MEET THE TEAM</h1>
                 <DepartmentSection
-                    imgPath="/images/IMG_16.webp"
+                    imgPath="/images/low_quality/IMG_16.webp"
                     imgAlt="IMG_16 - Group Photo"
                     title="The UPB DRIVE Solar Team"
                     titleColor="var(--eco-neon)"
@@ -18,7 +18,7 @@ const MeetTheTeamPage = () => {
 
                 <h1 className="mtt-header">TECHNICAL TEAM</h1>
                 <DepartmentSection
-                    imgPath="/images/IMG_18.webp"
+                    imgPath="/images/low_quality/IMG_18.webp"
                     imgAlt="IMG_18 - Aerodynamics department"
                     title="The Aerodynamics department"
                     titleColor="var(--vibrant-rose)"
@@ -27,7 +27,7 @@ const MeetTheTeamPage = () => {
                     The Aerodynamics department is responsible for optimizing the shape of the vehicle to minimize drag and maximize efficiency. Through simulations, CFD analysis, and design iterations, the team ensures that the car performs efficiently under real race conditions.                </DepartmentSection>
 
                 <DepartmentSection
-                    imgPath="/images/IMG_19.webp"
+                    imgPath="/images/low_quality/IMG_19.webp"
                     imgAlt="IMG_19 - The Mechanical & Chassis department"
                     title="The Mechanical & Chassis department"
                     titleColor="var(--eco-neon)"
@@ -37,7 +37,7 @@ const MeetTheTeamPage = () => {
                 </DepartmentSection>
 
                 <DepartmentSection
-                    imgPath="/images/IMG_20.webp"
+                    imgPath="/images/low_quality/IMG_20.webp"
                     imgAlt="IMG_20 - The Low Voltage department"
                     title="The Low Voltage department"
                     titleColor="var(--vibrant-rose)"
@@ -47,7 +47,7 @@ const MeetTheTeamPage = () => {
                 </DepartmentSection>
 
                 <DepartmentSection
-                    imgPath="/images/IMG_21.webp"
+                    imgPath="/images/low_quality/IMG_21.webp"
                     imgAlt="IMG_21 - The High Voltage department"
                     title="The High Voltage department"
                     titleColor="var(--eco-neon)"
@@ -58,7 +58,7 @@ const MeetTheTeamPage = () => {
 
                 <h1 className="mtt-header">OPERATIONAL TEAM</h1>
                 <DepartmentSection
-                    imgPath="/images/IMG_23.webp"
+                    imgPath="/images/low_quality/IMG_23.webp"
                     imgAlt="IMG_23 - The Sponsorship department"
                     title="The Sponsorship department"
                     titleColor="var(--vibrant-rose)"
@@ -68,7 +68,7 @@ const MeetTheTeamPage = () => {
                 </DepartmentSection>
 
                 <DepartmentSection
-                    imgPath="/images/IMG_24.webp"
+                    imgPath="/images/low_quality/IMG_24.webp"
                     imgAlt="IMG_24 - The Logistics department"
                     title="The Logistics department"
                     titleColor="var(--eco-neon)"
@@ -78,7 +78,7 @@ const MeetTheTeamPage = () => {
                 </DepartmentSection>
 
                 <DepartmentSection
-                    imgPath="/images/IMG_25.webp"
+                    imgPath="/images/low_quality/IMG_25.webp"
                     imgAlt="IMG_25 - The Social Media department"
                     title="The Social Media department"
                     titleColor="var(--vibrant-rose)"

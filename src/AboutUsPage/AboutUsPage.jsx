@@ -2,14 +2,14 @@ import './AboutUsPage.css';
 import ImageCarousel from '../Atoms/ImageCarousel/ImageCarousel';
 
 const imgSet1 = [
-    "/images/IMG_1.webp", "/images/IMG_2.webp", "/images/IMG_3.webp",
-    "/images/IMG_4.webp", "/images/IMG_5.webp", "/images/IMG_6.webp"
+    "/images/low_quality/IMG_1.webp", "/images/low_quality/IMG_2.webp", "/images/low_quality/IMG_3.webp",
+    "/images/low_quality/IMG_4.webp", "/images/low_quality/IMG_5.webp", "/images/low_quality/IMG_6.webp"
 ];
 
 const imgSet2 = [
-    "/images/IMG_7.webp", "/images/IMG_8.webp", "/images/IMG_9.webp",
-    "/images/IMG_10.webp", "/images/IMG_11.webp", "/images/IMG_12.webp",
-    "/images/IMG_13.webp", "/images/IMG_14.webp", "/images/IMG_15.webp",
+    "/images/low_quality/IMG_7.webp", "/images/low_quality/IMG_8.webp", "/images/low_quality/IMG_9.webp",
+    "/images/low_quality/IMG_10.webp", "/images/low_quality/IMG_11.webp", "/images/low_quality/IMG_12.webp",
+    "/images/low_quality/IMG_13.webp", "/images/low_quality/IMG_14.webp", "/images/low_quality/IMG_15.webp",
 ]
 
 function AboutUsPage() {

@@ -17,7 +17,7 @@ function HomePage() {
   return (
     <>
       <div className="first-section">
-        <img src="/images/IMG_2.webp" alt="Home image" />
+        <img src="/images/low_quality/IMG_2.webp" alt="Home image" />
         <div className="hero-content">
           <div className="hero-text-section">
             <p className="hero-title">Welcome to the official page of <span>UPB DRIVE Solar</span></p>
@@ -30,7 +30,7 @@ function HomePage() {
       <div className="second-section">
         <div className="intro-content">
           <div className="intro-left-image">
-            <img src="/images/IMG_1.webp" alt="A group photo."/>
+            <img src="/images/low_quality/IMG_1.webp" alt="A group photo."/>
           </div>
           <div className="intro-right-content">
             <p className="text-content">
