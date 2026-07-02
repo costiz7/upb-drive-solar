@@ -32,15 +32,15 @@ function ContactPage() {
                     </div>
                     <div className="follow-section">
                         <h2 className='contact-h2'>Follow us</h2>
-                        <div className="social">
+                        <div className="social" onClick={() => window.open('https://www.instagram.com/upbdrive_solar/', '_blank')}>
                             <InstagramIcon className="c-icon" />
                             <span>Instagram</span>
                         </div>
-                        <div className="social">
+                        <div className="social" onClick={() => window.open('https://www.tiktok.com/@upbdrive_solar', '_blank')}>
                             <TikTokIcon className="c-icon" />
                             <span>TikTok</span>
                         </div>
-                        <div className="social">
+                        <div className="social" onClick={() => window.open('https://www.linkedin.com/company/upbdrive-solar/', '_blank')}>
                             <LinkedinIcon className="c-icon" />
                             <span>LinkedIn</span>
                         </div>
