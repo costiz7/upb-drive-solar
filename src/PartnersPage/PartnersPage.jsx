@@ -15,6 +15,7 @@ function PartnersPage() {
                         <PartnerLogo imgSrc='/logos/elsa-industry.webp'/>
                         <PartnerLogo imgSrc='/logos/BCR.webp'/>
                         <PartnerLogo imgSrc='/logos/Imperial_Metal_SRL_logo.webp'/>
+                        <PartnerLogo imgSrc='/logos/profi.webp'/>
                     </div>
                 </div>
                 <div className="partners-section premium-partners">
@@ -31,6 +32,11 @@ function PartnersPage() {
                         <PartnerLogo imgSrc='/logos/noark.webp'/>
                         <PartnerLogo imgSrc='/logos/eastern_biologix.webp'/>
                         <PartnerLogo imgSrc='/logos/FRIGO_logo.webp'/>
+                        <PartnerLogo imgSrc='/logos/mafcom.webp'/>
+                        <PartnerLogo imgSrc='/logos/norelem.webp'/>
+                        <PartnerLogo imgSrc='/logos/alro.webp'/>
+                        <PartnerLogo imgSrc='/logos/synevo.webp'/>
+                        <PartnerLogo imgSrc='/logos/tp_link.webp'/>
                         <PartnerLogo imgSrc='/logos/holver_logo.webp'/>
                         <PartnerLogo imgSrc='/logos/ANSYS_logo.webp'/>
                         <PartnerLogo imgSrc='/logos/Dassault_systems_logo.webp'/>

@@ -16,22 +16,32 @@ const MeetTheTeamPage = () => {
                     Our team is composed of 38 students from various faculties and specializations, bringing together a diverse set of skills and perspectives. This multidisciplinary structure allows us to approach the project from both a strong technical and organizational standpoint.<br /><br /> The team is divided into two main branches: Technical and Operational, each playing a critical role in the development and success of the project.
                 </DepartmentSection>
 
-                <h1 className="mtt-header">TECHNICAL TEAM</h1>
+                <DepartmentSection
+                    imgPath="/images/low_quality/IMG_17.webp"
+                    imgAlt="IMG_17 - Technical Team"
+                    title="TECHNICAL TEAM"
+                    titleColor="var(--vibrant-rose)"
+                    isInverse={true}
+                >
+                    The Technical Department is responsible for the vehicle’s engineering development, including aerodynamics, structures, chassis, electrical systems, battery, solar cells, telemetry, and software integration.
+                </DepartmentSection>
+
                 <DepartmentSection
                     imgPath="/images/low_quality/IMG_18.webp"
                     imgAlt="IMG_18 - Aerodynamics department"
                     title="The Aerodynamics department"
-                    titleColor="var(--vibrant-rose)"
-                    isInverse={true}
+                    titleColor="var(--eco-neon)"
+                    isInverse={false}
                 >
-                    The Aerodynamics department is responsible for optimizing the shape of the vehicle to minimize drag and maximize efficiency. Through simulations, CFD analysis, and design iterations, the team ensures that the car performs efficiently under real race conditions.                </DepartmentSection>
+                    The Aerodynamics department is responsible for optimizing the shape of the vehicle to minimize drag and maximize efficiency. Through simulations, CFD analysis, and design iterations, the team ensures that the car performs efficiently under real race conditions.
+                </DepartmentSection>
 
                 <DepartmentSection
                     imgPath="/images/low_quality/IMG_19.webp"
                     imgAlt="IMG_19 - The Mechanical & Chassis department"
                     title="The Mechanical & Chassis department"
-                    titleColor="var(--eco-neon)"
-                    isInverse={false}
+                    titleColor="var(--vibrant-rose)"
+                    isInverse={true}
                 >
                     This department focuses on the structural design and integrity of the vehicle. It is responsible for the chassis, suspension, and overall mechanical assembly, ensuring strength, safety, and weight optimization.
                 </DepartmentSection>
@@ -40,8 +50,8 @@ const MeetTheTeamPage = () => {
                     imgPath="/images/low_quality/IMG_20.webp"
                     imgAlt="IMG_20 - The Low Voltage department"
                     title="The Low Voltage department"
-                    titleColor="var(--vibrant-rose)"
-                    isInverse={true}
+                    titleColor="var(--eco-neon)"
+                    isInverse={false}
                 >
                     The Low Voltage team develops and manages all low-power electronic systems, including sensors, data acquisition, telemetry, and control systems. They ensure reliable communication and monitoring throughout the vehicle.
                 </DepartmentSection>
@@ -50,13 +60,22 @@ const MeetTheTeamPage = () => {
                     imgPath="/images/low_quality/IMG_21.webp"
                     imgAlt="IMG_21 - The High Voltage department"
                     title="The High Voltage department"
-                    titleColor="var(--eco-neon)"
-                    isInverse={false}
+                    titleColor="var(--vibrant-rose)"
+                    isInverse={true}
                 >
                     The High Voltage department handles the powertrain, including the battery pack, solar array integration, and energy distribution. Their main goal is to maximize energy efficiency while maintaining safety and system reliability.
                 </DepartmentSection>
 
-                <h1 className="mtt-header">OPERATIONAL TEAM</h1>
+                <DepartmentSection
+                    imgPath="/images/low_quality/IMG_22.webp"
+                    imgAlt="IMG_22 - Operational Team"
+                    title="OPERATIONAL TEAM"
+                    titleColor="var(--eco-neon)"
+                    isInverse={false}
+                >
+                    The Operational Department oversees project management, logistics, financial planning, sponsor relations, communications, and competition organization, supporting the successful execution of the project
+                </DepartmentSection>
+
                 <DepartmentSection
                     imgPath="/images/low_quality/IMG_23.webp"
                     imgAlt="IMG_23 - The Sponsorship department"
