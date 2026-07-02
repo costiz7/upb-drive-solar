@@ -38,6 +38,18 @@
 
   --navbar-height: 80px;
   --min-navbar-height: 60px; 
+
+  --h1-size-1: 2.6rem;
+  --h1-size-2: 2.2rem;
+  --h1-size-3: 2rem;
+
+  --h2-size-1: 2.4rem;
+  --h2-size-2: 2rem;
+  --h2-size-3: 1.8rem;
+
+  --p-size-1: 1.3rem;
+  --p-size-2: 1.1rem;
+  --p-size-3: 1rem;
 }
 
 * {

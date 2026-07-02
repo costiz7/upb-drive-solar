@@ -42,13 +42,13 @@
 }
 
 .department-content > h1 {
-  font-size: 2.8rem;
+  font-size: var(--h1-size-1);
   font-family: var(--font-display);
   color: var(--eco-neon);
 }
 
 .department-content > .text-content {
-  font-size: 1.3rem;
+  font-size: var(--p-size-1);
   letter-spacing: 1.5px;
   font-weight: 100;
   color: var(--cloud-gray);
@@ -67,7 +67,7 @@
   }
 
   .department-content > h1 {
-    font-size: 2.2rem;
+    font-size: var(--h1-size-2);
   }
 
   .department-content {
@@ -75,7 +75,7 @@
   }
 
   .department-content > .text-content {
-    font-size: 1.1rem;
+    font-size: var(--p-size-2);
     letter-spacing: 1.3px;
     word-spacing: 3px;
   }
@@ -93,7 +93,7 @@
   }
 
   .department-content > h1 {
-    font-size: 2rem;
+    font-size: var(--h1-size-3);
   }
 
   .department-content {
@@ -101,7 +101,7 @@
   }
 
   .department-content > .text-content {
-    font-size: 1rem;
+    font-size: var(--p-size-3);
     letter-spacing: 1px;
     word-spacing: 2px;
   }
