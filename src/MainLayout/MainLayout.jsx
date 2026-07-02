@@ -6,9 +6,13 @@ import { Outlet } from "react-router-dom";
 function MainLayout() {
     return (
         <>
-            <Navbar />
-            <Outlet />
-            <Footer />
+            <div className="main-layout-wrapper">
+                <Navbar />
+                <div className="main-content">
+                    <Outlet />
+                </div>
+                <Footer />
+            </div>
         </>
     );
 }

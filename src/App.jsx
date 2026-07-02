@@ -5,6 +5,7 @@ import HomePage from "./HomePage/HomePage.jsx";
 import AboutUsPage from "./AboutUsPage/AboutUsPage.jsx";
 import MeetTheTeamPage from "./MeetTheTeamPage/MeetTheTeamPage.jsx";
 import PartnersPage from "./PartnersPage/PartnersPage.jsx";
+import ContactPage from "./ContactPage/ContactPage.jsx";
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
             <Route path="/about" element={<AboutUsPage />}/>
             <Route path="/team" element={<MeetTheTeamPage />}/>
             <Route path="/partners" element={<PartnersPage />}/>
-            <Route path="/contact" element={<></>}/>
+            <Route path="/contact" element={<ContactPage />}/>
           </Route>
         </Routes>
       </BrowserRouter>
