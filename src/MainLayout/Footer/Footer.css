@@ -12,22 +12,18 @@
   margin-top: var(--navbar-height);
 }
 
-.footer > .credit {
-  position: relative;
-  color: rgba(var(--rgb-cloud-gray), 0.5);
-}
-
 .footer > .copyright {
   position: relative;
+  font-size: var(--p-size-1);
+  letter-spacing: 1px;
+  word-spacing: 3px;
 }
 
 @media (max-width: 900px) {
-  .footer > .credit {
-    font-size: 0.8rem;
-  }
 
   .footer > .copyright {
-    font-size: 0.8rem;
+    font-size: var(--p-size-2);
+    word-spacing: 1.5px;
   }
 }
 
@@ -35,11 +31,9 @@
   .footer{
     margin-top: var(--min-navbar-height);
   }
-  .footer > .credit {
-    font-size: 0.6rem;
-  }
 
   .footer > .copyright {
-    font-size: 0.6rem;
+    font-size: var(--p-size-3);
+    word-spacing: 1px;
   }
 }

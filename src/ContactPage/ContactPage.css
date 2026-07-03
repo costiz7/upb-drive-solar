@@ -48,7 +48,8 @@
     margin-bottom: 20px;
     font-size: var(--p-size-1);
     letter-spacing: 1px;
-    word-spacing: 5px;
+    word-spacing: 3px;
+    line-height: 35px;
 }
 
 .social {
@@ -69,13 +70,14 @@
     color: var(--eco-neon);
     letter-spacing: 2px;
     font-weight: 100;
-    word-spacing: 5px;
+    word-spacing: 3px;
 }
 
 .address {
     font-size: var(--p-size-3);
     word-spacing: 3px;
     max-width: 500px;
+    line-height: 25px;
 }
 
 .map {
@@ -98,7 +100,8 @@
 
     .phone, .mail, .social {
         font-size: var(--p-size-2);
-        word-spacing: 3px;
+        word-spacing: 1.5px;
+        line-height: 30px;
     }
 }
 
@@ -127,16 +130,17 @@
         gap: 10px;
         margin-bottom: 25px;
         font-size: var(--p-size-3);
-        word-spacing: 3px;
+        word-spacing: 1px;
+        line-height: 25px;
     }
 
     .phone > p > span:last-child {
-        word-spacing: 3px;
+        word-spacing: 1px;
     }
 
     .address {
         font-size: var(--p-size-3);
-        word-spacing: 3px;
+        word-spacing: 1px;
     }
 
     .map {

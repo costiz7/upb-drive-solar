@@ -58,7 +58,7 @@
 
 .hero-title {
   position: relative;
-  font-family: var(--font-text);
+  font-family: var(--font-display);
   font-size: 3rem;
   letter-spacing: 2px;
   font-weight: bold;
@@ -151,7 +151,8 @@
   letter-spacing: 1.5px;
   font-weight: 100;
   color: var(--cloud-gray);
-  word-spacing: 5px;
+  word-spacing: 3px;
+  line-height: 35px;
 }
 
 .glow-btn.home-second-btn {
@@ -207,7 +208,8 @@
   .intro-right-content > .text-content {
     font-size: var(--p-size-2);
     letter-spacing: 1.3px;
-    word-spacing: 3px;
+    word-spacing: 1.5px;
+    line-height: 30px;
   }
 }
 
@@ -243,7 +245,8 @@
   .intro-right-content > .text-content {
     font-size: var(--p-size-3);
     letter-spacing: 1px;
-    word-spacing: 2px;
+    word-spacing: 1px;
+    line-height: 25px;
   }
 }
 

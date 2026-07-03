@@ -23,7 +23,8 @@
     letter-spacing: 1.5px;
     font-weight: 100;
     color: var(--cloud-gray);
-    word-spacing: 5px;
+    word-spacing: 3px;
+    line-height: 35px;
     text-align: center;
 }
 
@@ -65,8 +66,9 @@
 
     .partners-page-wrapper > p {
         font-size: var(--p-size-2);
-        word-spacing: 2px;
+        word-spacing: 1.5px;
         text-align: left;
+        line-height: 30px;
     }
 
     .partners-section {
@@ -97,7 +99,8 @@
     .partners-page-wrapper > p {
         font-size: var(--p-size-3);
         letter-spacing: 1px;
-        word-spacing: 2px;
+        word-spacing: 1px;
+        line-height: 25px;
     }
 
     .partners-section > .partners-logos {
