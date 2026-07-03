@@ -1,5 +1,5 @@
 import "./MeetTheTeamPage.css";
-import DepartmentSection from "../Atoms/DepartmentSection/DepartmentSection";
+import DepartmentSection from "../IndividualComponents/DepartmentSection/DepartmentSection";
 
 const MeetTheTeamPage = () => {
     return (

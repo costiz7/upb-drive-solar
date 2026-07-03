@@ -1,5 +1,5 @@
 import './PartnersPage.css';
-import PartnerLogo from '../Atoms/PartnerLogo/PartnerLogo.jsx';
+import PartnerLogo from '../IndividualComponents/PartnerLogo/PartnerLogo.jsx';
 
 function PartnersPage() {
     return (

@@ -1,5 +1,5 @@
 import './AboutUsPage.css';
-import ImageCarousel from '../Atoms/ImageCarousel/ImageCarousel';
+import ImageCarousel from '../IndividualComponents/ImageCarousel/ImageCarousel';
 
 const imgSet1 = [
     "/images/low_quality/IMG_1.webp", "/images/low_quality/IMG_2.webp", "/images/low_quality/IMG_3.webp",

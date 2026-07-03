@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./HomePage.css";
-import GlowButton from '../Atoms/GlowButton/GlowButton';
+import GlowButton from '../IndividualComponents/GlowButton/GlowButton';
 
 function HomePage() {
   const navigate = useNavigate();
