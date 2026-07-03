@@ -56,7 +56,7 @@
 }
 
 @media (max-width: 900px) {
-  .carousel-item {
+  .carousel-item {s
     width: 70%;
   }
   .carousel-item.prev {
@@ -64,5 +64,23 @@
   }
   .carousel-item.next {
     transform: translate(5%, -50%) scale(0.8);
+  }
+  .carousel-container {
+    height: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel-item {
+    width: 90%;
+  }
+  .carousel-item.prev {
+    transform: translate(-105%, -50%) scale(0.8);
+  }
+  .carousel-item.next {
+    transform: translate(5%, -50%) scale(0.8);
+  }
+  .carousel-container {
+    height: 300px;
   }
 }
