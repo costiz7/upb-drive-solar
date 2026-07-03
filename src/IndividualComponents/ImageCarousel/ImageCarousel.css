@@ -56,7 +56,7 @@
 }
 
 @media (max-width: 900px) {
-  .carousel-item {s
+  .carousel-item {
     width: 70%;
   }
   .carousel-item.prev {
